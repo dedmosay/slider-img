@@ -58,6 +58,8 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
 .carousel-container {
     padding: auto;
     width: 750px;  
+    min-width: 200px;
+    max-width: 800px;
     margin: auto;
     border: 5px solid black;
     overflow: hidden; 
@@ -69,6 +71,8 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
 .carousel-slide {
     display: flex;
     width: 100%; 
+    min-width: 200px;
+    max-width: 800px;
     height: 500px;
 }   
 
