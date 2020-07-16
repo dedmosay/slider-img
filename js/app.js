@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
      else {
         setTimeout(()=> {
             loaded()
-        }, 25000)
+        }, 30000)
     }
 
     function loaded() {
