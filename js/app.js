@@ -1,8 +1,16 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 
     const img = document.querySelector('.carousel-slide img')
+    
+    if (img.complete) {
+        loaded()
+    } else {
+        setTimeout(()=> {
+            loaded()
+        }, 5000)
+    }
 
-    img.onload = function () {
+    function loaded() {
         const carouselSlide = document.querySelector('.carousel-slide')
         const carouselImage = document.querySelectorAll('.carousel-slide img')
     
