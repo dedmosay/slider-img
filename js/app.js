@@ -1,15 +1,16 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 
-    const img = document.querySelector('.carousel-slide img')
+    const img = document.querySelector('img')
     
     if (img.complete) {
+ 
+            loaded()
+ 
+    }
+     else {
         setTimeout(()=> {
             loaded()
-        }, 5000)
-    } else {
-        setTimeout(()=> {
-            loaded()
-        }, 15000)
+        }, 25000)
     }
 
     function loaded() {
