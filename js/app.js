@@ -3,11 +3,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const img = document.querySelector('.carousel-slide img')
     
     if (img.complete) {
-        loaded()
-    } else {
         setTimeout(()=> {
             loaded()
         }, 5000)
+    } else {
+        setTimeout(()=> {
+            loaded()
+        }, 15000)
     }
 
     function loaded() {
