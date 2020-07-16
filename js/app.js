@@ -1,4 +1,5 @@
-
+document.addEventListener('DOMContentLoaded', (event) => {
+    
 const carouselSlide = document.querySelector('.carousel-slide')
 const carouselImage = document.querySelectorAll('.carousel-slide img')
   
@@ -23,7 +24,6 @@ nextBtn.addEventListener('click', () => {
     carouselSlide.style.transition = "transform 0.4s ease-in-out"
     counter++;
     carouselSlide.style.transform = positionPX(counter)
-
 })
 
 prevBtn.addEventListener('click', () => {
@@ -46,4 +46,5 @@ carouselSlide.addEventListener('transitionend', () => {
         counter = carouselImage.length - counter
         carouselSlide.style.transform = positionPX(counter)
     }
+})
 })
