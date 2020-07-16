@@ -1,18 +1,14 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 
-
-    const carouselSlide = document.querySelector('.carousel-slide')
-    const carouselImage = document.querySelectorAll('.carousel-slide img')
-
-    const prevBtn = document.querySelector('#prevBtn')
-    const nextBtn = document.querySelector('#nextBtn')
-
-    
-
     const img = document.querySelector('.carousel-slide img')
 
     img.onload = function () {
-
+        const carouselSlide = document.querySelector('.carousel-slide')
+        const carouselImage = document.querySelectorAll('.carousel-slide img')
+    
+        const prevBtn = document.querySelector('#prevBtn')
+        const nextBtn = document.querySelector('#nextBtn')
+    
         function positionPX(counter) {
             var value = -(carouselImage[0].clientWidth * counter)
             return 'translateX(' + value + 'px)'
